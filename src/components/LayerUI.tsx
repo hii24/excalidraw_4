@@ -318,13 +318,15 @@ const LayerUI = ({
             )}
           >
             <UserList collaborators={appState.collaborators} />
-            {renderTopRightUI?.(device.editor.isMobile, appState)}
-            {!appState.viewModeEnabled &&
-              // hide button when sidebar docked
-              (!isSidebarDocked ||
-                appState.openSidebar?.name !== DEFAULT_SIDEBAR.name) && (
-                <tunnels.DefaultSidebarTriggerTunnel.Out />
-              )}
+
+            {/*//user-online*/}
+            {/*{renderTopRightUI?.(device.editor.isMobile, appState)}*/}
+            {/*{!appState.viewModeEnabled &&*/}
+            {/*  // hide button when sidebar docked*/}
+            {/*  (!isSidebarDocked ||*/}
+            {/*    appState.openSidebar?.name !== DEFAULT_SIDEBAR.name) && (*/}
+            {/*    <tunnels.DefaultSidebarTriggerTunnel.Out />*/}
+            {/*  )}*/}
           </div>
         </div>
       </FixedSideContainer>

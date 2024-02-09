@@ -269,35 +269,35 @@ export const ColorPicker = ({
           type={type}
           topPicks={topPicks}
         />
-        <div
-          style={{
-            width: 1,
-            height: "100%",
-            backgroundColor: "var(--default-border-color)",
-            margin: "0 auto",
-          }}
-        />
-        <Popover.Root
-          open={appState.openPopup === type}
-          onOpenChange={(open) => {
-            updateData({ openPopup: open ? type : null });
-          }}
-        >
-          {/* serves as an active color indicator as well */}
-          <ColorPickerTrigger color={color} label={label} type={type} />
-          {/* popup content */}
-          {appState.openPopup === type && (
-            <ColorPickerPopupContent
-              type={type}
-              color={color}
-              onChange={onChange}
-              label={label}
-              elements={elements}
-              palette={palette}
-              updateData={updateData}
-            />
-          )}
-        </Popover.Root>
+        {/*<div*/}
+        {/*  style={{*/}
+        {/*    width: 1,*/}
+        {/*    height: "100%",*/}
+        {/*    backgroundColor: "var(--default-border-color)",*/}
+        {/*    margin: "0 auto",*/}
+        {/*  }}*/}
+        {/*/>*/}
+        {/*<Popover.Root*/}
+        {/*  open={appState.openPopup === type}*/}
+        {/*  onOpenChange={(open) => {*/}
+        {/*    updateData({ openPopup: open ? type : null });*/}
+        {/*  }}*/}
+        {/*>*/}
+        {/*  /!* serves as an active color indicator as well *!/*/}
+        {/*  <ColorPickerTrigger color={color} label={label} type={type} />*/}
+        {/*  /!* popup content *!/*/}
+        {/*  {appState.openPopup === type && (*/}
+        {/*    <ColorPickerPopupContent*/}
+        {/*      type={type}*/}
+        {/*      color={color}*/}
+        {/*      onChange={onChange}*/}
+        {/*      label={label}*/}
+        {/*      elements={elements}*/}
+        {/*      palette={palette}*/}
+        {/*      updateData={updateData}*/}
+        {/*    />*/}
+        {/*  )}*/}
+        {/*</Popover.Root>*/}
       </div>
     </div>
   );

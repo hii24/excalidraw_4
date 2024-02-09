@@ -5,6 +5,8 @@ import { trackEvent } from "../src/analytics";
 import { getDefaultAppState } from "../src/appState";
 import { ErrorDialog } from "../src/components/ErrorDialog";
 import { TopErrorBoundary } from "../src/components/TopErrorBoundary";
+
+
 import {
   APP_NAME,
   EVENT,
@@ -799,6 +801,7 @@ const ExcalidrawWrapper = () => {
 };
 
 const ExcalidrawApp = () => {
+
   return (
     <TopErrorBoundary>
       <Provider unstable_createStore={() => appJotaiStore}>

@@ -9,8 +9,11 @@ const rootElement = document.getElementById("root")!;
 const root = createRoot(rootElement);
 registerSW();
 
+
+
 root.render(
   <StrictMode>
     <ExcalidrawApp />
   </StrictMode>,
 );
+
